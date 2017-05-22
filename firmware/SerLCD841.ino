@@ -5,13 +5,13 @@
 #include <LiquidCrystal.h>
 
 #define RS    10 // PA0
-#define EN     6 // PA4
+#define EN     7 // PA3
 #define DATA4  2 // PB2
 #define DATA5  3 // PA7
 #define DATA6  4 // PA6
-#define DATA7  5 // PA5
+#define DATA7  6 // PA4
 
-#define LIGHT  7 // PA3
+#define LIGHT  5 // PA5
 
 // initialize the library with the numbers of the interface pins
 LiquidCrystal lcd(RS, EN, DATA4, DATA5, DATA6, DATA7);

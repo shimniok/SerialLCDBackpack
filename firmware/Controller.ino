@@ -48,46 +48,24 @@ void process(uint8_t letter) {
     
   } else if (state == SUPER) {
 
-/*
     // TODO: save settings to EEPROM
-    switch (letter) {
-      case 1:
-        // turn on backlight
-        digitalWrite(LIGHT, HIGH);
-        break;
-      case 2:
-        // turn off backlight
-        digitalWrite(LIGHT, LOW);
-        break;
-      case 3:
-        LCD_Width = 20; // TODO: test
-        break;
-      case 4:
-        LCD_Width = 16; // TODO: test
-        break;
-      case 5:
-        LCD_Lines = 4; // TODO: test
-        break;
-      case 6:
-        LCD_Lines = 2; // TODO: test
-        break;
-      case 7:
-        LCD_Lines = 1; // TODO: test
-        break;
-        break;
-      default:
-        break;
-    }
-    */
+    // TODO: lines, width
+    
+    // First 3 bits indicate command, remaining 5 bits are value
+    if ((letter & 0xE0) == LCD_BACKLIGHT) {
+      const uint8_t brightness[32] = { 
+        0, 9, 17, 25, 33, 42, 50, 58, 66, 74, 83, 91, 99, 
+        107, 116, 124, 132, 140, 148, 157, 165, 173, 181,
+        190, 198, 206, 214, 222, 231, 239, 247, 255
+      };
+      uint8_t b = (letter & 0x1f);
 
-    if ((letter & 0xf0) == LCD_BACKLIGHT) {
-      uint8_t brightness = letter & 0x0f;
-      if (brightness == 0) {
-        digitalWrite(LIGHT, LOW);
-      } else {
-        // TODO -- vary brightness levels, 1-29
+      if (b >= 31) {
         digitalWrite(LIGHT, HIGH);
+      } else {
+        analogWrite(LIGHT, brightness[b]);
       }
+
     }
 
     /*
