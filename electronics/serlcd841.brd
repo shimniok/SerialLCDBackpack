@@ -593,8 +593,8 @@ Please make sure your boards conform to these design rules.</description>
 <element name="JP1" library="pinhead-2" package="1X03-S" value="" x="40.386" y="4.318" smashed="yes" rot="R90">
 <attribute name="VALUE" x="43.561" y="0.508" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="Q1" library="bt_transistor" package="SOT-23" value="7000" x="2.286" y="7.874" smashed="yes" rot="R180">
-<attribute name="VALUE" x="3.175" y="6.35" size="0.8128" layer="27" font="vector" ratio="10" rot="R270" align="bottom-center"/>
+<element name="Q1" library="bt_transistor" package="SOT-23" value="7000" x="2.794" y="8.128" smashed="yes" rot="R270">
+<attribute name="VALUE" x="2.54" y="6.223" size="0.8128" layer="27" font="vector" ratio="10" rot="R180" align="bottom-center"/>
 </element>
 <element name="R2" library="bt_rcl" package="0603" value="10K" x="26.162" y="8.89" smashed="yes" rot="R270">
 <attribute name="VALUE" x="26.924" y="8.89" size="0.8128" layer="27" font="vector" ratio="10" rot="R90" align="top-center"/>
@@ -802,10 +802,10 @@ Please make sure your boards conform to these design rules.</description>
 </signal>
 <signal name="K">
 <contactref element="Q1" pad="1"/>
-<wire x1="3.236" y1="8.974" x2="1.948" y2="12.626" width="0.254" layer="1"/>
+<wire x1="1.694" y1="9.078" x2="1.694" y2="12.372" width="0.254" layer="1"/>
 <contactref element="LCD2" pad="K"/>
 <wire x1="2.032" y1="12.7" x2="2.022" y2="12.7" width="0.254" layer="1"/>
-<wire x1="2.022" y1="12.7" x2="1.948" y2="12.626" width="0.254" layer="1"/>
+<wire x1="2.022" y1="12.7" x2="1.694" y2="12.372" width="0.254" layer="1"/>
 </signal>
 <signal name="PB2">
 <contactref element="IC1" pad="5"/>
@@ -828,8 +828,8 @@ Please make sure your boards conform to these design rules.</description>
 <contactref element="R1" pad="2"/>
 <wire x1="3.136" y1="4.064" x2="3.136" y2="4.914" width="0.254" layer="1"/>
 <wire x1="3.136" y1="4.914" x2="4.064" y2="5.842" width="0.254" layer="1"/>
-<wire x1="4.064" y1="5.842" x2="4.064" y2="7.282" width="0.254" layer="1"/>
-<wire x1="4.064" y1="7.282" x2="2.286" y2="6.774" width="0.254" layer="1"/>
+<wire x1="4.064" y1="5.842" x2="4.064" y2="8.044" width="0.254" layer="1"/>
+<wire x1="4.064" y1="8.044" x2="3.894" y2="8.128" width="0.254" layer="1"/>
 <wire x1="3.136" y1="4.064" x2="3.136" y2="2.452" width="0.254" layer="1"/>
 <wire x1="3.136" y1="2.452" x2="4.572" y2="1.016" width="0.254" layer="1"/>
 <wire x1="4.572" y1="1.016" x2="13.462" y2="1.016" width="0.254" layer="1"/>
