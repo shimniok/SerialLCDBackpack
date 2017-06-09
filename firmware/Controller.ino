@@ -6,12 +6,6 @@
 #define LCD_WIDTH_SETTING       1
 #define LCD_LINE_SETTING        2
 
-#define LINE1_START             5
-#define LINE2_START             25
-
-#define BAUD_RATE               45
-
-
 static uint8_t LCD_Width = 16;
 static uint8_t LCD_Lines = 2;
 
@@ -63,7 +57,7 @@ void process(uint8_t letter) {
       if (b >= 31) {
         digitalWrite(LIGHT, HIGH);
       } else {
-        analogWrite(LIGHT, brightness[b]);
+        analogWrite(LIGHT, brightness[31-b]);
       }
 
     }
