@@ -17,6 +17,11 @@
 LiquidCrystal lcd(RS, EN, DATA4, DATA5, DATA6, DATA7);
 
 void setup() {
+//  uint8_t *phde = 0x6A;
+//  *phde |= 0x01; // enable high sink on PA5
+
+  PHDE |= PHDEA0; // enable high sink on PA5
+  
   lcd_init();
   Serial.begin(9600);
 }
