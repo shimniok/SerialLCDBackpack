@@ -13,6 +13,10 @@ void lcd_init() {
   // set up the LCD's number of columns and rows:
   pinMode(LIGHT, OUTPUT);
   digitalWrite(LIGHT, LOW);
+  //setBrightness( EEPROM.read(addr) );
+  //_cols = EEPROM.read(addr);
+  //_rows = EEPROM.read(addr);
+  //lcd.begin(_cols, _rows);
   lcd.begin(16, 2);
   lcd.clear();
 }
@@ -59,6 +63,8 @@ void process(uint8_t letter) {
       } else {
         analogWrite(LIGHT, brightness[31-b]);
       }
+
+      //EEPROM.write(addr, brightness);
 
     }
 
