@@ -2415,6 +2415,152 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </deviceset>
 </devicesets>
 </library>
+<library name="bt_transistor">
+<description>&lt;b&gt;Common Transistors&lt;/b&gt;
+&lt;p&gt;Created by Michael Shimniok &lt;a href="http://www.bot-thoughts.com/"&gt;www.bot-thoughts.com&lt;/a&gt;&lt;/b&gt;</description>
+<packages>
+<package name="TO92">
+<description>&lt;b&gt;TO 92&lt;/b&gt;</description>
+<wire x1="-2.0946" y1="-1.651" x2="-2.6549" y2="-0.254" width="0.127" layer="21" curve="-32.78104"/>
+<wire x1="-2.6549" y1="-0.254" x2="-0.7863" y2="2.5485" width="0.127" layer="21" curve="-78.318477"/>
+<wire x1="0.7863" y1="2.5484" x2="2.0945" y2="-1.651" width="0.127" layer="21" curve="-111.09954"/>
+<wire x1="-2.0945" y1="-1.651" x2="2.0945" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-2.2537" y1="-0.254" x2="-0.2863" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="-2.6549" y1="-0.254" x2="-2.2537" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="-0.2863" y1="-0.254" x2="0.2863" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="2.2537" y1="-0.254" x2="2.6549" y2="-0.254" width="0.127" layer="21"/>
+<wire x1="0.2863" y1="-0.254" x2="2.2537" y2="-0.254" width="0.127" layer="51"/>
+<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.127" layer="51" curve="-34.293591"/>
+<pad name="1" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
+<pad name="3" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
+<text x="3.175" y="0.635" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="3.175" y="-1.27" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-0.254" y="0.127" size="0.8128" layer="21" font="vector" ratio="10">B</text>
+<text x="-1.651" y="1.016" size="0.8128" layer="21" font="vector" ratio="10">E</text>
+<text x="1.016" y="1.016" size="0.8128" layer="21" font="vector" ratio="10">C</text>
+</package>
+<package name="SOT-23">
+<description>&lt;B&gt;SOT-23 Package&lt;/B&gt;
+&lt;P&gt;From smd-ipc.lbr</description>
+<wire x1="1.422" y1="0.66" x2="1.422" y2="-0.66" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="-0.66" x2="-1.422" y2="-0.66" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="-0.66" x2="-1.422" y2="0.66" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="0.66" x2="1.422" y2="0.66" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="0" y="2.159" size="0.8128" layer="25" font="vector" ratio="10" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.159" size="0.8128" layer="27" font="vector" ratio="10" rot="R180" align="bottom-center">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+<package name="TO92I">
+<description>&lt;b&gt;TO-92&lt;/b&gt; Pads In Line  C B E from top&lt;p&gt;</description>
+<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.127" layer="21"/>
+<wire x1="-2.413" y1="1.1359" x2="2.413" y2="1.1359" width="0.127" layer="21" curve="-129.583345"/>
+<wire x1="1.136" y1="-0.127" x2="-1.136" y2="-0.127" width="0.127" layer="51"/>
+<wire x1="-2.413" y1="1.1359" x2="-2.664" y2="-0.127" width="0.127" layer="51" curve="27.937554"/>
+<wire x1="-2.664" y1="-0.127" x2="-2.413" y2="-1.1359" width="0.127" layer="51" curve="22.478763"/>
+<wire x1="-1.404" y1="-0.127" x2="-2.664" y2="-0.127" width="0.127" layer="51"/>
+<wire x1="-2.4135" y1="-1.1359" x2="-2.095" y2="-1.651" width="0.127" layer="21" curve="13.038528"/>
+<wire x1="-1.136" y1="-0.127" x2="-1.404" y2="-0.127" width="0.127" layer="21"/>
+<wire x1="2.413" y1="-1.1359" x2="2.664" y2="-0.127" width="0.127" layer="51" curve="22.478763"/>
+<wire x1="2.664" y1="-0.127" x2="2.413" y2="1.1359" width="0.127" layer="51" curve="27.937554"/>
+<wire x1="2.664" y1="-0.127" x2="1.404" y2="-0.127" width="0.127" layer="51"/>
+<wire x1="1.404" y1="-0.127" x2="1.136" y2="-0.127" width="0.127" layer="21"/>
+<wire x1="2.095" y1="-1.651" x2="2.4247" y2="-1.1118" width="0.127" layer="21" curve="13.609443"/>
+<pad name="C" x="2.54" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<pad name="E" x="-2.54" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<pad name="B" x="0" y="0" drill="0.8128" shape="octagon" rot="R90"/>
+<text x="-2.54" y="3.048" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.302" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="1.27" y="0.508" size="0.8128" layer="21" font="vector">C</text>
+<text x="-1.778" y="0.508" size="0.8128" layer="21" font="vector">E</text>
+<text x="-0.254" y="1.016" size="0.8128" layer="21" font="vector">B</text>
+</package>
+<package name="SC75">
+<smd name="1" x="0.7239" y="0.4953" dx="0.3556" dy="0.508" layer="1" rot="R90"/>
+<smd name="2" x="-0.7239" y="0" dx="0.3556" dy="0.508" layer="1" rot="R90"/>
+<smd name="3" x="0.7239" y="-0.4953" dx="0.3556" dy="0.508" layer="1" rot="R90"/>
+<text x="1.524" y="0.508" size="0.8128" layer="25">&gt;NAME</text>
+<text x="1.524" y="-0.762" size="0.8128" layer="27">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="NPN">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<text x="3.048" y="0.762" size="1.778" layer="95">&gt;NAME</text>
+<text x="3.048" y="-1.778" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BJT-NPN" prefix="Q">
+<description>&lt;b&gt;NPN Transistor&lt;/b&gt;
+
+&lt;p&gt;Small signal NPN Bipolar Junction Transistor (BJT). Use this device to represent any of a number of such transistors with similar package and pinout: 2N4401, 2N3904, 2N2222, etc.&lt;/p&gt;</description>
+<gates>
+<gate name="Q2" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="TO92" package="TO92">
+<connects>
+<connect gate="Q2" pin="B" pad="2"/>
+<connect gate="Q2" pin="C" pad="1"/>
+<connect gate="Q2" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT23" package="SOT-23">
+<connects>
+<connect gate="Q2" pin="B" pad="3"/>
+<connect gate="Q2" pin="C" pad="1"/>
+<connect gate="Q2" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="INLINE" package="TO92I">
+<connects>
+<connect gate="Q2" pin="B" pad="B"/>
+<connect gate="Q2" pin="C" pad="C"/>
+<connect gate="Q2" pin="E" pad="E"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SC75" package="SC75">
+<connects>
+<connect gate="Q2" pin="B" pad="1"/>
+<connect gate="Q2" pin="C" pad="3"/>
+<connect gate="Q2" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2439,7 +2585,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$4" library="bt" deviceset="VCC" device="" value="5V"/>
 <part name="GND4" library="bt" deviceset="GND" device=""/>
 <part name="R5" library="bt_rcl" deviceset="R" device="0603" value="10K"/>
-<part name="J1" library="bt_avr" deviceset="AVRISP6" device="_TP" value="AVRISP"/>
+<part name="J1" library="bt_avr" deviceset="AVRISP6" device="_COMPACT" value="AVRISP"/>
 <part name="U$5" library="bt" deviceset="VCC" device="" value="5V"/>
 <part name="GND5" library="bt" deviceset="GND" device=""/>
 <part name="VR1" library="SparkFun-Resistors" deviceset="TRIMPOT" device="-SMD-3MM-OPEN-1/10W-25%" value="10k"/>
@@ -2449,12 +2595,15 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="U$6" library="bt" deviceset="BTLOGO" device="-LOGO-MD"/>
 <part name="FRAME1" library="bt" deviceset="LETTER_L" device=""/>
 <part name="D1" library="bt_diode" deviceset="DIODE" device="_SOD123FL" value="MBR1020VL"/>
+<part name="Q1" library="bt_transistor" deviceset="BJT-NPN" device="SOT23" value="2n3904"/>
+<part name="GND1" library="bt" deviceset="GND" device=""/>
+<part name="R1" library="bt_rcl" deviceset="R" device="0603" value="10K"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="149.86" y="17.78" size="3.81" layer="94">SerialLCD</text>
-<text x="228.6" y="17.78" size="3.81" layer="94">0.1</text>
+<text x="228.6" y="17.78" size="3.81" layer="94">0.2</text>
 <text x="168.656" y="141.224" size="1.778" layer="97">CONTRAST</text>
 </plain>
 <instances>
@@ -2486,6 +2635,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <attribute name="NAME" x="67.818" y="75.565" size="1.778" layer="95"/>
 <attribute name="VALUE" x="67.818" y="72.263" size="1.778" layer="96"/>
 </instance>
+<instance part="Q1" gate="Q2" x="190.5" y="91.44"/>
+<instance part="GND1" gate="1" x="193.04" y="83.82"/>
+<instance part="R1" gate="R1" x="170.18" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -2676,6 +2828,10 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="Q2" gate="G$1" pin="GND"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="Q1" gate="Q2" pin="E"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="RESET" class="0">
 <segment>
@@ -2693,12 +2849,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </net>
 <net name="PA5" class="0">
 <segment>
-<wire x1="200.66" y1="99.06" x2="157.48" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="LCD2" gate="LCD1" pin="K"/>
 <pinref part="IC1" gate="IC1" pin="(PCINT5/ADC5/ACO0/TOCC4/T2/TXD1/MISO)PA5"/>
 <label x="139.7" y="109.22" size="1.778" layer="95" rot="MR0"/>
-<wire x1="157.48" y1="109.22" x2="157.48" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="109.22" x2="157.48" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="109.22" x2="157.48" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="R1" gate="R1" pin="1"/>
+<wire x1="165.1" y1="91.44" x2="157.48" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="J1" gate="A" pin="MISO"/>
@@ -2748,6 +2904,21 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="83.82" y1="60.96" x2="66.04" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="60.96" x2="66.04" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="D1" gate="D1" pin="A"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="Q1" gate="Q2" pin="B"/>
+<pinref part="R1" gate="R1" pin="2"/>
+<wire x1="175.26" y1="91.44" x2="187.96" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$5" class="0">
+<segment>
+<pinref part="LCD2" gate="LCD1" pin="K"/>
+<wire x1="200.66" y1="99.06" x2="193.04" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="Q2" pin="C"/>
+<wire x1="193.04" y1="96.52" x2="193.04" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

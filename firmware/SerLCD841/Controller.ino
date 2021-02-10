@@ -61,7 +61,7 @@ void process(uint8_t letter) {
       if (b >= 31) {
         digitalWrite(LIGHT, HIGH);
       } else {
-        analogWrite(LIGHT, brightness[31-b]);
+        analogWrite(LIGHT, brightness[b]);
       }
 
       //EEPROM.write(addr, brightness);
